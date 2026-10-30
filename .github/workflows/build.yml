@@ -19,6 +19,10 @@ jobs:
       - name: Build Geode mod
         id: build
         uses: geode-sdk/build-geode-mod@main
+      - name: Inspect EditorTab API
+        if: always()
+        run: |
+          find build -type f | grep -iE "EditorTabAPI|editor.*tab"
         with:
           target: Android64
           sdk: latest

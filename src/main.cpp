@@ -2,7 +2,7 @@
 #include <Geode/modify/EditorUI.hpp>
 #include <Geode/utils/async.hpp>
 #include <Geode/utils/file.hpp>
-
+#include <alphalaneous.editortab_api/include/EditorTabAPI.hpp>
 
 using namespace geode::prelude;
 
