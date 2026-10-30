@@ -41,7 +41,7 @@ protected:
         log::info("Opening image picker...");
 
         async::spawn(
-            file::pick(FilePickMode::OpenFile, {}),
+            file::pick(file::PickMode::OpenFile, {}),
             [](Result<std::optional<std::filesystem::path>> result) {
 
                 if (result.isErr()) {
